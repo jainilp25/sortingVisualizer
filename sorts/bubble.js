@@ -5,15 +5,15 @@ async function bubble() {
         console.log('In ith loop');
         for(let j = 0; j < ele.length-i-1; j++){
             console.log('In jth loop');
-            ele[j].style.background = 'blue';
-            ele[j+1].style.background = 'blue';
+            ele[j].style.background = 'orange';
+            ele[j+1].style.background = 'orange';
             if(parseInt(ele[j].style.height) > parseInt(ele[j+1].style.height)){
                 console.log('In if condition');
                 await waitforme(delay);
                 swap(ele[j], ele[j+1]);
             }
-            ele[j].style.background = 'cyan';
-            ele[j+1].style.background = 'cyan';
+            ele[j].style.background = '#0D6EFD';
+            ele[j+1].style.background = '#0D6EFD';
         }
         ele[ele.length-1-i].style.background = 'green';
     }

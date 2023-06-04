@@ -40,7 +40,7 @@ async function partitionLomuto(ele, l, r){
     // color
     for(let k = 0; k < ele.length; k++){
         if(ele[k].style.background != 'green')
-            ele[k].style.background = 'cyan';
+            ele[k].style.background = '#0D6EFD';
     }
 
     return i;
